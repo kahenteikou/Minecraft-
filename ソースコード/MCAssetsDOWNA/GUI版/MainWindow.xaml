@@ -1,0 +1,22 @@
+﻿<Window x:Class="GUI版.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI版"
+        mc:Ignorable="d"
+        Title="リソースパック作成ツール" Height="192.106" Width="777.632">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="35*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="VerTextBox" HorizontalAlignment="Left" Height="20" Margin="160,49,0,0" TextWrapping="Wrap" Text="1.12" VerticalAlignment="Top" Width="174" RenderTransformOrigin="1.157,0.726" TextChanged="VerTextBox_TextChanged"/>
+        <Label Content="assetバージョン名" HorizontalAlignment="Left" Height="42" Margin="23,45,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.505,-0.368"/>
+        <Label Content="出力フォルダ名" HorizontalAlignment="Left" Height="31" Margin="23,92,0,0" VerticalAlignment="Top" Width="93"/>
+        <TextBox x:Name="PathTextbox" HorizontalAlignment="Left" Height="18" Margin="145,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="0.454,1.211"/>
+        <Button x:Name="Button1" Content="参照" HorizontalAlignment="Left" Height="18" Margin="400,92,0,0" VerticalAlignment="Top" Width="80" Click="Button1_click"/>
+        <Button x:Name="StartButton" Content="開始" HorizontalAlignment="Left" Height="28" Margin="176,123,0,0" VerticalAlignment="Top" Width="158" Click="StartButton_click"/>
+
+    </Grid>
+</Window>
